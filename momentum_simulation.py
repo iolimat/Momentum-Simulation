@@ -75,7 +75,7 @@ fig_contour_without_momentum = go.Figure()
 fig_objective_function = go.Figure()
 
 app = dash.Dash(__name__)
-server = app.server
+server = app.server()
 
 app.layout = html.Div([
     html.Label("Initial Parameters:"),
