@@ -155,6 +155,5 @@ def update_graphs(x, y, z, learning_rate, momentum, num_iterations):
 
     return fig_surface_with_momentum, fig_contour_with_momentum, fig_surface_without_momentum, fig_contour_without_momentum, fig_objective_function
 
-
-
-app.run_server(debug=False)
+if __name__ == '__main__':
+    app.run_server(debug=False)
