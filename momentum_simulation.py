@@ -1,4 +1,3 @@
-
 import numpy as np
 import plotly.graph_objects as go
 from plotly.subplots import make_subplots
@@ -75,7 +74,7 @@ fig_contour_without_momentum = go.Figure()
 fig_objective_function = go.Figure()
 
 app = dash.Dash(__name__)
-server = app.server()
+server = app.server
 
 app.layout = html.Div([
     html.Label("Initial Parameters:"),
@@ -158,4 +157,4 @@ def update_graphs(x, y, z, learning_rate, momentum, num_iterations):
 
 
 
-app.run_server(debug=True)
+app.run_server(debug=False)
